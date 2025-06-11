@@ -1,0 +1,199 @@
+/* ESTILOS GENERALES */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* ENCABEZADO Y PIE DE PÁGINA */
+header, footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+/* NAVEGACIÓN */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00bfff; /* Azul suave en hover */
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    padding: 2rem;
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 10px;
+}
+
+.intro-contacto {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* FORMULARIO DE CONTACTO */
+form {
+    max-width: 500px;
+    margin: 2rem auto;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 0.3rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: white;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00bfff;
+    outline: none;
+}
+
+form button {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #009ad6;
+}
+
+/* ENLACE DE REDES SOCIALES */
+.contacto-info {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contacto-info a {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contacto-info a:hover {
+    text-decoration: underline;
+}
+
+/* MULTIMEDIA GENERAL */
+img, video, audio {
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+/* GALERÍA DE IMÁGENES */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.galeria img {
+    width: 480px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* BLOQUES DESTACADOS */
+blockquote {
+    font-style: italic;
+    background-color: #eaf6ff;
+    border-left: 5px solid #00bfff;
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    max-width: 700px;
+    color: #444;
+}
+
+/* VIDEOS */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.video-grid iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-grid iframe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Encabezado de navegación reutilizado en todas las páginas -->
+    <!-- Mantuve coherencia en la estructura del sitio repitiendo el menú -->
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="biografia.html">Biografía</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Redacté este texto para invitar a los visitantes a interactuar -->
+        <p class="intro-contacto">
+            Podés escribirme para compartir opiniones, enviar contenido o simplemente para sumarte al fan club.
+        </p>
+
+        <!-- Formulario con campos básicos y etiquetas claras -->
+        <!-- Decidí usar <label> e <input> para mejorar la accesibilidad -->
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Incluí un enlace externo real para mayor veracidad -->
+        <div class="contacto-info">
+            <p>También podés visitar su Instagram:</p>
+            <a href="https://www.instagram.com/serebro_official/" target="_blank">Instagram</a>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2025 Sergio Rivas | Proyecto Final de Diseño Web</p>
+    </footer>
+</body>
+</html>
+
